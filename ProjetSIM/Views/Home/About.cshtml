@@ -1,7 +1,17 @@
-﻿@{
-    ViewBag.Title = "About";
+﻿@model IEnumerable<ProjetSIM.Models.Utilisateur>
+
+@{
+    ViewBag.Title = "Test";
 }
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+<p></p>
+@{
+    foreach (var item in Model)
+    {
+        @item.nomUtilisateur <br>
+        @item.motDePasse <br>
+
+    }
+}

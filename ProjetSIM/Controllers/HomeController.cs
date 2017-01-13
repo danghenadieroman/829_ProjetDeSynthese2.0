@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using ProjetSIM.Models;
 
 namespace ProjetSIM.Controllers
 {
@@ -19,7 +20,10 @@ namespace ProjetSIM.Controllers
         {
             ViewBag.Message = "Your application description page.";
 
-            return View();
+            var db = DbContextSIM.getInstance();
+            var utilisateurs = from u in db.Utilisateurs
+                               select u;
+            return View(utilisateurs);
         }
 
         public ActionResult Contact()
