@@ -11,8 +11,7 @@ namespace ProjetSIM.Controllers
         public ActionResult Index()
         {
             return View();
-            //test1
-
+            //test2
         }
 
         public ActionResult About()
