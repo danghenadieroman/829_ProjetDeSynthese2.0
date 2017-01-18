@@ -142,7 +142,7 @@
     <Compile Include="Models\LigneBonDistribution.cs" />
     <Compile Include="Models\LigneCommande.cs" />
     <Compile Include="Models\LigneVente.cs" />
-    <Compile Include="Models\ModelSIM.cs" />
+    <Compile Include="Models\DbContextSIM.cs" />
     <Compile Include="Models\NotificationBonDistribution.cs" />
     <Compile Include="Models\NotificationStockCritique.cs" />
     <Compile Include="Models\Paiement.cs" />
