@@ -11,10 +11,16 @@ namespace ProjetSIM.Controllers
     {
         public ActionResult Index()
         {
-            return View();
-            //test3
+            return View();//Retourne le formulaire login
 
         }
+
+        public ActionResult Login()
+        {
+            return View();//Retourne le formulaire login
+
+        }
+
 
         public ActionResult About()
         {
